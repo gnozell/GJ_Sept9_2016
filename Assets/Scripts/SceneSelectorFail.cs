@@ -20,7 +20,7 @@ public class SceneSelectorFail : MonoBehaviour {
 
 		//PlayerPrefs.SetInt ("life", 3);
 		Counter.text = "";
-		PlayerPrefs.SetInt ("life", PlayerPrefs.GetInt ("life") - 1);
+		PlayerPrefs.SetInt ("life", PlayerPrefs.GetInt ("life") -1);
 		if (PlayerPrefs.GetInt ("life") <= 0) {
 			Application.LoadLevel("Ending Menu");
 		}
@@ -33,7 +33,7 @@ public class SceneSelectorFail : MonoBehaviour {
 				showinghurt = false;
 				Counter.text = "3";
 			} else {
-				Counter.text = "Life: " + (PlayerPrefs.GetInt ("life")-1).ToString();
+				Counter.text = "Life: " + (PlayerPrefs.GetInt ("life")).ToString();
 			}
 				
 			hurttimer -= Time.deltaTime;

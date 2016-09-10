@@ -29,6 +29,10 @@ public class RunnerGame : MonoBehaviour {
 	}
 
 	void OnTriggerEnter2D(Collider2D col){
-		Application.LoadLevel("Game_Selector");
+		if (col.tag == "Finish") {
+			Application.LoadLevel ("Game_Selector");
+		} else {
+			Application.LoadLevel ("Game_Selector_Fail");
+		}
 	}
 }

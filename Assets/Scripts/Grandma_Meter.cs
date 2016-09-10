@@ -3,7 +3,7 @@ using System.Collections;
 
 public class Grandma_Meter : MonoBehaviour {
 
-
+	public float timer = 8f;
 	public float powerlevel = 0f;
 	// Use this for initialization
 	void Start () {
@@ -22,6 +22,11 @@ public class Grandma_Meter : MonoBehaviour {
 			Application.LoadLevel("Game_Selector");
 		} else if (powerlevel != 0f ){
 			powerlevel -= .25f;
+		}
+
+		timer -= Time.deltaTime;
+		if (timer <= 0) {
+			Application.LoadLevel("Game_Selector_Fail");
 		}
 	}
 }

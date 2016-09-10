@@ -11,7 +11,7 @@ public class MenuManager : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if (Input.GetButton("Space")) {
-			new GameMaster().set_life (3);
+			PlayerPrefs.SetInt ("life", 3);
 			Application.LoadLevel("Game_Selector");
 		}
 	

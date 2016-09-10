@@ -19,3 +19,7 @@ EditorBuildSettings:
     path: Assets/Scene/Rocket Dodge.unity
   - enabled: 1
     path: Assets/Scene/Inf Runner.unity
+  - enabled: 1
+    path: Assets/Scene/Duck Defense.unity
+  - enabled: 1
+    path: Assets/Scene/Typing Game.unity
