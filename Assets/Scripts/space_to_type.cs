@@ -21,19 +21,41 @@ public class space_to_type : MonoBehaviour {
 	void Start ()
     {
         i = (int)Random.Range(0, 200) % 5;
-        timer = 60;
-        //(toBeTyped.ToCharArray())[letterNum] = (sentences[i].ToCharArray())[letterNum];
+        timer = 40;
+        typed_text.text = sentences[i][letterNum].ToString();
+        letterNum++;
     }
 
     // Update is called once per frame
     void Update()
     {
-        //typed_text.text = sentences[2].
-        if (timer-- <= 0)
+        if (Input.GetKeyDown(KeyCode.Space))
         {
-            letterNum++;
-            //(toBeTyped.ToCharArray())[letterNum] = (sentences[i].ToCharArray())[letterNum];
-            timer = 60;
+            if(sentences[i][letterNum] == ' ')
+            {
+                typed_text.text += sentences[i][letterNum].ToString();
+                letterNum++;
+                typed_text.text += sentences[i][letterNum].ToString();
+                letterNum++;
+                timer = 40;
+            } else if(sentences[i][letterNum-1] != ' ')
+            {
+                Application.LoadLevel("Game_Selector");
+            }
+        } else if (timer == 1 && (sentences[i][letterNum] == ' '))
+        {
+           Application.LoadLevel("Game_Selector");
         }
+
+        if (timer <= 0)
+        {
+            typed_text.text += sentences[i][letterNum].ToString();
+            letterNum++;
+            if(letterNum >= sentences[i].Length)
+                Application.LoadLevel("Game_Selector");
+            timer = 40;
+            if (sentences[i][letterNum] == ' ') timer = 60;
+        } 
+        timer--;
     }
 }
