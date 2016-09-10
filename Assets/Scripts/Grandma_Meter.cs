@@ -22,7 +22,6 @@ public class Grandma_Meter : MonoBehaviour {
 			Application.LoadLevel("Game_Selector");
 		} else if (powerlevel != 0f ){
 			powerlevel -= .25f;
-			Debug.Log (powerlevel);
 		}
 	}
 }

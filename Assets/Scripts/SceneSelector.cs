@@ -12,6 +12,7 @@ public class SceneSelector : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+		 Random.InitState ( (int)System.DateTime.Now.Ticks);
 	
 	}
 	
@@ -19,7 +20,9 @@ public class SceneSelector : MonoBehaviour {
 	void Update () {
 
 		if (displayedTime == 0) {
-			SceneManager.LoadScene( Random.Range( 3, SceneManager.sceneCount ) );
+			
+			int Rnd = Random.Range (3, SceneManager.sceneCountInBuildSettings);
+			SceneManager.LoadScene( Rnd );
 		}
 
 		if (currentTime < 0) {
