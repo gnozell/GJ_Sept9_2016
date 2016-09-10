@@ -15,13 +15,13 @@ public class rocket_dodge : MonoBehaviour {
 
 	Rigidbody2D rb;
 	BoxCollider2D bCollider;
-	int gamestate = 0;
+	int gamestate = 1;
 
 	// Use this for initialization
 	void Start () {
 		timer = 120;
-		Instantiate (textSpace, new Vector3 (0f, 2.27f, -1f), Quaternion.identity);
-		Instantiate (text3, new Vector3 (0f, -1.92f, -1f), Quaternion.identity);
+		//Instantiate (textSpace, new Vector3 (0f, 0f, -1f), Quaternion.identity);
+		//Instantiate (text3, new Vector3 (0f, -1.92f, -1f), Quaternion.identity);
 		player = this.gameObject;
 		rb = this.gameObject.GetComponent<Rigidbody2D>();
 		bCollider = this.gameObject.GetComponent<BoxCollider2D> ();
@@ -59,7 +59,7 @@ public class rocket_dodge : MonoBehaviour {
 
         } else if (gamestate == 2) {
 			Debug.Log ("You lost");
-            Application.LoadLevel("Game_Selector");
+            Application.LoadLevel("Game_Selector_Fail");
 		}
 
 	}

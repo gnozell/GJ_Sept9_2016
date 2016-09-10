@@ -40,11 +40,11 @@ public class space_to_type : MonoBehaviour {
                 timer = 40;
             } else if(sentences[i][letterNum-1] != ' ')
             {
-                Application.LoadLevel("Game_Selector");
+                Application.LoadLevel("Game_Selector_Fail");
             }
         } else if (timer == 1 && (sentences[i][letterNum] == ' '))
         {
-           Application.LoadLevel("Game_Selector");
+           Application.LoadLevel("Game_Selector_Fail");
         }
 
         if (timer <= 0)

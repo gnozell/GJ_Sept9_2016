@@ -1,0 +1,44 @@
+﻿Merge remote-tracking branch 'origin/master'
+
+# Conflicts:
+#	Assets/Scripts/GameMaster.cs.meta
+#
+# It looks like you may be committing a merge.
+# If this is not correct, please remove the file
+#	.git/MERGE_HEAD
+# and try again.
+
+
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# On branch master
+# Your branch and 'origin/master' have diverged,
+# and have 1 and 1 different commits each, respectively.
+#   (use "git pull" to merge the remote branch into yours)
+#
+# All conflicts fixed but you are still merging.
+#
+# Changes to be committed:
+#	modified:   .vs/GJ_Sept9_2016/v14/.suo
+#	new file:   Assets/Game_Selector_Fail.unity
+#	new file:   Assets/Game_Selector_Fail.unity.meta
+#	deleted:    Assets/RunnerGame.cs
+#	modified:   Assets/Scene/Inf Runner.unity
+#	new file:   Assets/Scripts/GameMaster.cs
+#	modified:   Assets/Scripts/MenuManager.cs
+#	modified:   Assets/Scripts/RunnerGame.cs.meta
+#	modified:   Assets/Scripts/SceneSelector.cs
+#	new file:   Assets/Scripts/SceneSelectorFail.cs
+#	renamed:    Assets/RunnerGame.cs.meta -> Assets/Scripts/SceneSelectorFail.cs.meta
+#	modified:   ProjectSettings/EditorBuildSettings.asset
+#	modified:   ProjectSettings/ProjectSettings.asset
+#
+# Changes not staged for commit:
+#	modified:   Assets/Scripts/duck_fall.cs
+#	modified:   Assets/Scripts/noSpace.cs
+#	modified:   ProjectSettings/ProjectSettings.asset
+#
+# Untracked files:
+#	qcwykxvy.nbe.txt
+#
+
