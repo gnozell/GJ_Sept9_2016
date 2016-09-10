@@ -21,7 +21,7 @@ public class SceneSelector : MonoBehaviour {
 
 		if (displayedTime == 0) {
 			
-			int Rnd = Random.Range (3, SceneManager.sceneCountInBuildSettings);
+			int Rnd = Random.Range (4, SceneManager.sceneCountInBuildSettings);
 			SceneManager.LoadScene( Rnd );
 		}
 

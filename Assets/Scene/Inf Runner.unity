@@ -1065,6 +1065,7 @@ GameObject:
   - 61: {fileID: 825578510}
   - 50: {fileID: 825578509}
   - 114: {fileID: 825578511}
+  - 114: {fileID: 825578512}
   m_Layer: 0
   m_Name: Runner
   m_TagString: Untagged
@@ -1175,6 +1176,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7f1de10225ff84943b0f7454cb62d01c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &825578512
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 825578505}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58d3dba679e7f4e1cae9deec9f4806f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &894815427
