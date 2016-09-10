@@ -55,8 +55,11 @@ public class rocket_dodge : MonoBehaviour {
 			rb.AddForce (new Vector2 (1, 5 * spaceDown));
 		} else if (gamestate == 2) {
 			Debug.Log ("You won");
-		} else if (gamestate == 2) {
+            Application.LoadLevel("Game_Selector");
+
+        } else if (gamestate == 2) {
 			Debug.Log ("You lost");
+            Application.LoadLevel("Game_Selector");
 		}
 
 	}
@@ -64,8 +67,7 @@ public class rocket_dodge : MonoBehaviour {
 
 
 	void OnCollisionEnter2D(Collision2D coll){
-		gamestate = 3;
-		Destroy(this.gameObject);
+        gamestate = 2;
 		Instantiate (splosion, this.gameObject.transform.position, this.gameObject.transform.rotation);
 	}
 

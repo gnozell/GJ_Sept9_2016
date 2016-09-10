@@ -38,7 +38,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 195774}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 06c6355c6946b3e4cb286370ccd33ad0, type: 3}
+  m_Script: {fileID: 11500000, guid: 28a750f5e24234ed7b35ce62c21482bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   timer: 30
@@ -71,7 +71,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 72f9e5f3601dbf44085daaf54b8c8d88, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 3dee5260bfb7d479a8a6046b3b59118d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
