@@ -22,6 +22,7 @@ public class space_to_type : MonoBehaviour {
     {
         i = (int)Random.Range(0, 200) % 5;
         timer = 40;
+
         typed_text.text = sentences[i][letterNum].ToString();
         letterNum++;
     }
@@ -38,9 +39,10 @@ public class space_to_type : MonoBehaviour {
                 typed_text.text += sentences[i][letterNum].ToString();
                 letterNum++;
                 timer = 40;
-            } else if(sentences[i][letterNum-1] != ' ')
-            {
-                Application.LoadLevel("Game_Selector_Fail");
+            } else if (i > 0) {
+                if (sentences[i][letterNum - 1] != ' ') {
+                    Application.LoadLevel("Game_Selector_Fail");
+                }
             }
         } else if (timer == 1 && (sentences[i][letterNum] == ' '))
         {
@@ -51,7 +53,7 @@ public class space_to_type : MonoBehaviour {
         {
             typed_text.text += sentences[i][letterNum].ToString();
             letterNum++;
-            if(letterNum >= sentences[i].Length)
+            if(letterNum >= sentences[i].Length-2)
                 Application.LoadLevel("Game_Selector");
             timer = 40;
             if (sentences[i][letterNum] == ' ') timer = 60;

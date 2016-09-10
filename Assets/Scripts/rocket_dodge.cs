@@ -57,7 +57,7 @@ public class rocket_dodge : MonoBehaviour {
 			Debug.Log ("You won");
             Application.LoadLevel("Game_Selector");
 
-        } else if (gamestate == 2) {
+        } else if (gamestate == 3) {
 			Debug.Log ("You lost");
             Application.LoadLevel("Game_Selector_Fail");
 		}
@@ -67,7 +67,7 @@ public class rocket_dodge : MonoBehaviour {
 
 
 	void OnCollisionEnter2D(Collision2D coll){
-        gamestate = 2;
+        gamestate = 3;
 		Instantiate (splosion, this.gameObject.transform.position, this.gameObject.transform.rotation);
 	}
 

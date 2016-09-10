@@ -100,7 +100,6 @@ GameObject:
   - 224: {fileID: 224993019}
   - 222: {fileID: 224993022}
   - 114: {fileID: 224993021}
-  - 114: {fileID: 224993020}
   m_Layer: 5
   m_Name: tutorial_text
   m_TagString: Untagged
@@ -126,20 +125,6 @@ RectTransform:
   m_AnchoredPosition: {x: 131, y: 100}
   m_SizeDelta: {x: 357, y: 59}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &224993020
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 224993018}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c80f22a6e08d9c643a76cf763fb41428, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  i: 0
-  typed_text: {fileID: 0}
-  timer: 0
 --- !u!114 &224993021
 MonoBehaviour:
   m_ObjectHideFlags: 0
