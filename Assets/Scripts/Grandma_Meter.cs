@@ -19,7 +19,7 @@ public class Grandma_Meter : MonoBehaviour {
 		if (powerlevel < 0f) {
 			powerlevel = 0f;
 		} else if(powerlevel > 100f){
-			//player won the game
+			Application.LoadLevel("Game_Selector");
 		} else if (powerlevel != 0f ){
 			powerlevel -= .25f;
 			Debug.Log (powerlevel);

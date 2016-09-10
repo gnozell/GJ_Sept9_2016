@@ -11,7 +11,7 @@ public class MenuManager : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if (Input.GetButton("Space")) {
-			Debug.Log ("got here space");
+			Application.LoadLevel("Game_Selector");
 			
 		}
 	
