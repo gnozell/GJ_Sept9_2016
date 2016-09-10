@@ -14,7 +14,6 @@ public class rocket_dodge : MonoBehaviour {
 	public GameObject textGo;
 
 	Rigidbody2D rb;
-	BoxCollider2D bCollider;
 	int gamestate = 1;
 
 	// Use this for initialization
@@ -24,7 +23,6 @@ public class rocket_dodge : MonoBehaviour {
 		//Instantiate (text3, new Vector3 (0f, -1.92f, -1f), Quaternion.identity);
 		player = this.gameObject;
 		rb = this.gameObject.GetComponent<Rigidbody2D>();
-		bCollider = this.gameObject.GetComponent<BoxCollider2D> ();
 	}
 	
 	// Update is called once per frame
