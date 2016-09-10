@@ -28,7 +28,7 @@ public class space_to_type : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
-        typed_text.text = sentences[2].
+        //typed_text.text = sentences[2].
         if (timer-- <= 0)
         {
             letterNum++;
