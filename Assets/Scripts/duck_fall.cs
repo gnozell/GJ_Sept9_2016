@@ -20,7 +20,7 @@ public class duck_fall : MonoBehaviour {
         {
             if (this.transform.position.x > -9 && this.transform.position.x < 9)
             {
-                Application.LoadLevel("Game_Selector");
+                Application.LoadLevel("Game_Selector_Fail");
             }
             else Destroy(this.gameObject);
         }

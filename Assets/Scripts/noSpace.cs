@@ -19,7 +19,7 @@ public class noSpace : MonoBehaviour {
         }
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            Application.LoadLevel("Game_Selector");
+            Application.LoadLevel("Game_Selector_Fail");
         }
 	}
 }
