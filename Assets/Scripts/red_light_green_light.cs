@@ -41,7 +41,7 @@ public class red_light_green_light : MonoBehaviour {
             }
         }
 
-        barLength -= .05f;
+        barLength -= .01f;
 
         if (barLength < 0) barLength = 0;
 

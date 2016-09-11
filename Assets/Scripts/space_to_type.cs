@@ -7,6 +7,7 @@ public class space_to_type : MonoBehaviour {
 
 	public int i;
 	string[] sentences = {
+        "",
 		"Welcome to the Space Jam",
 		"Release the Kraken",
         "Call me Ishmael",
@@ -21,7 +22,7 @@ public class space_to_type : MonoBehaviour {
 	// Use this for initialization
 	void Start ()
     {
-        i = (int)Random.Range(0, 200) % 5;
+        i = (int)Random.Range(0, 200) % 5+1;
         timer = 40;
 
         typed_text.text = sentences[i][letterNum].ToString();
@@ -42,8 +43,7 @@ public class space_to_type : MonoBehaviour {
                 timer = 40;
             } else if (i > 0) {
                 if (sentences[i][letterNum - 1] != ' ') {
-                    //Application.LoadLevel("Game_Selector_Fail");
-					SceneManager.LoadScene ("Game_Selector_Fail");
+     				SceneManager.LoadScene ("Game_Selector_Fail");
                 }
             }
         } else if (timer == 1 && (sentences[i][letterNum] == ' '))
