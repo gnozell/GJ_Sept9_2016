@@ -8,11 +8,11 @@ public class space_to_type : MonoBehaviour {
 	public int i;
 	string[] sentences = {
         "",
-		"Welcome to the Space Jam",
-		"Release the Kraken",
-        "Call me Ishmael",
-        "Let me smell thine hair",
-        "Come back son we miss you"
+		"Welcome to the Space Jam..",
+		"Release the Kraken..",
+        "Call me Ishmael..",
+        "Let me smell thine hair..",
+        "Come back son we miss you.."
     };
     string toBeTyped;
 	public Text typed_text;
