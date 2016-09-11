@@ -14,8 +14,11 @@ public class MenuManager : MonoBehaviour {
 		if (Input.GetButton("Space")) {
 			PlayerPrefs.SetInt ("life", 3);
 			PlayerPrefs.SetInt ("played", 0);
-			//Application.LoadLevel("Game_Selector");
 			SceneManager.LoadScene ("Game_Selector");
+		}
+
+		if (Input.GetButton("Escape")) {
+			Application.Quit ();
 		}
 	
 	}

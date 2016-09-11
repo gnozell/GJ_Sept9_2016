@@ -10,8 +10,6 @@ public class EndingMenu : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-	
-		Debug.Log (PlayerPrefs.GetInt ("played").ToString ());
 		Score.text = "Score: " + PlayerPrefs.GetInt ("played").ToString ();
 
 		PlayerPrefs.SetInt ("played", 0);
@@ -84,6 +82,10 @@ public class EndingMenu : MonoBehaviour {
 		if (Input.GetButton("Space")) {
 			//Application.LoadLevel("Main Menu");
 			SceneManager.LoadScene ("Main Menu");
+		}
+
+		if (Input.GetButton("Escape")) {
+			Application.Quit ();
 		}
 
 	}

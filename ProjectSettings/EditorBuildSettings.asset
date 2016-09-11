@@ -28,4 +28,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scene/Dont Press Space.unity
   - enabled: 1
+    path: Assets/Scene/SmooshedBug.unity
+  - enabled: 1
     path: Assets/Scene/Red Light Green Light.unity
