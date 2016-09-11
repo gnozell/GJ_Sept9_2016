@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class red_light_green_light : MonoBehaviour {
 
@@ -25,7 +26,8 @@ public class red_light_green_light : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         if (barLength >= 30)
-            Application.LoadLevel("Game_Selector");
+            //Application.LoadLevel("Game_Selector");
+			SceneManager.LoadScene ("Game_Selector");
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
@@ -34,7 +36,8 @@ public class red_light_green_light : MonoBehaviour {
                 barLength += 1f;
             } else if(timer >= 20)
             {
-                Application.LoadLevel("Game_Selector_Fail");
+                //Application.LoadLevel("Game_Selector_Fail");
+				SceneManager.LoadScene ("Game_Selector_Fail");
             }
         }
 

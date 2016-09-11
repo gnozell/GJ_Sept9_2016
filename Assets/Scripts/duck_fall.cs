@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class duck_fall : MonoBehaviour {
 
@@ -20,7 +21,8 @@ public class duck_fall : MonoBehaviour {
         {
             if (this.transform.position.x > -9 && this.transform.position.x < 9)
             {
-                Application.LoadLevel("Game_Selector_Fail");
+                //Application.LoadLevel("Game_Selector_Fail");
+				SceneManager.LoadScene ("Game_Selector_Fail");
             }
             else Destroy(this.gameObject);
         }

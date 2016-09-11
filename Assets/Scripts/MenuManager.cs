@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class MenuManager : MonoBehaviour {
 
@@ -12,7 +13,9 @@ public class MenuManager : MonoBehaviour {
 	void Update () {
 		if (Input.GetButton("Space")) {
 			PlayerPrefs.SetInt ("life", 3);
-			Application.LoadLevel("Game_Selector");
+			PlayerPrefs.SetInt ("played", 0);
+			//Application.LoadLevel("Game_Selector");
+			SceneManager.LoadScene ("Game_Selector");
 		}
 	
 	}

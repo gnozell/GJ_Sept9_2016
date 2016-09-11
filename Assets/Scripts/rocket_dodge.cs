@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class rocket_dodge : MonoBehaviour {
 
@@ -52,10 +53,12 @@ public class rocket_dodge : MonoBehaviour {
 				spaceDown = -1;
 			rb.AddForce (new Vector2 (1, 5 * spaceDown));
 		} else if (gamestate == 2) {
-            Application.LoadLevel("Game_Selector");
+            //Application.LoadLevel("Game_Selector");
+			SceneManager.LoadScene ("Game_Selector");
 
         } else if (gamestate == 3) {
-            Application.LoadLevel("Game_Selector_Fail");
+            //Application.LoadLevel("Game_Selector_Fail");
+			SceneManager.LoadScene ("Game_Selector_Fail");
 		}
 	}
 

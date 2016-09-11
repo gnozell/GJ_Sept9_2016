@@ -22,7 +22,9 @@ public class SceneSelector : MonoBehaviour {
 		if (displayedTime == 0) {
 			
 			int Rnd = Random.Range (4, SceneManager.sceneCountInBuildSettings);
+			PlayerPrefs.SetInt ("played", PlayerPrefs.GetInt ("played")+1);
 			SceneManager.LoadScene( Rnd );
+
 		}
 
 		if (currentTime < 0) {

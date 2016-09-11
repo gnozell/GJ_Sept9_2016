@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class balance_platform : MonoBehaviour {
 
@@ -16,7 +17,8 @@ public class balance_platform : MonoBehaviour {
         timer++;
         if(timer >= 575)
         {
-            Application.LoadLevel("Game_Selector");
+            //Application.LoadLevel("Game_Selector");
+			SceneManager.LoadScene ("Game_Selector");
         }
         if (Input.GetKeyDown(KeyCode.Space))
         {

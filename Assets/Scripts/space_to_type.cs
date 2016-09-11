@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class space_to_type : MonoBehaviour {
 
@@ -41,12 +42,13 @@ public class space_to_type : MonoBehaviour {
                 timer = 40;
             } else if (i > 0) {
                 if (sentences[i][letterNum - 1] != ' ') {
-                    Application.LoadLevel("Game_Selector_Fail");
+                    //Application.LoadLevel("Game_Selector_Fail");
+					SceneManager.LoadScene ("Game_Selector_Fail");
                 }
             }
         } else if (timer == 1 && (sentences[i][letterNum] == ' '))
         {
-           Application.LoadLevel("Game_Selector_Fail");
+			SceneManager.LoadScene ("Game_Selector_Fail");
         }
 
         if (timer <= 0)
@@ -54,7 +56,7 @@ public class space_to_type : MonoBehaviour {
             typed_text.text += sentences[i][letterNum].ToString();
             letterNum++;
             if(letterNum >= sentences[i].Length-2)
-                Application.LoadLevel("Game_Selector");
+				SceneManager.LoadScene ("Game_Selector");
             timer = 40;
             if (sentences[i][letterNum] == ' ') timer = 60;
         } 

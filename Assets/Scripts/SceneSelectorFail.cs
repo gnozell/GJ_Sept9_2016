@@ -17,12 +17,11 @@ public class SceneSelectorFail : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		Random.InitState ( (int)System.DateTime.Now.Ticks);
-
-		//PlayerPrefs.SetInt ("life", 3);
 		Counter.text = "";
 		PlayerPrefs.SetInt ("life", PlayerPrefs.GetInt ("life") -1);
 		if (PlayerPrefs.GetInt ("life") <= 0) {
-			Application.LoadLevel("Ending Menu");
+			//Application.LoadLevel("Ending Menu");
+			SceneManager.LoadScene ("Ending Menu");
 		}
 	}
 	
